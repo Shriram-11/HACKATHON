@@ -1,3 +1,5 @@
 from django.contrib import admin
-
-# Register your models here.
+from . models import Cal
+class CalAdmin(admin.CalAdmin):
+	list_display = ('sr', 'event', 'date', 'notes', 
+	'Img_url')
